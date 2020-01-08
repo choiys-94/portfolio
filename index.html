@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Yongseon Choi</title>
+    <title>Yongseon Choi - Portfolio</title>
 
     <!-- favicon -->
     <!-- <link href="favicon.png" rel=icon> -->
@@ -22,14 +22,89 @@
     <!-- Style CSS -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"> -->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <style>
+        .slogan {
+            color: #FFFFFF;
+            text-shadow: 2px 1px 2px #000000;
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .slogan .hl {
+            color: #FF0000;
+            font-size: 1.2em;
+            
+        }
+
+        .hl {
+            color: #FF0000;
+            font-weight: bold;
+        }
+
+        *:hover {
+            cursor: default;
+        }
+
+        a:hover {
+            cursor: pointer;
+        }
+
+        #back-to-top {
+            display: inline-block;
+            background-color: #FF9800;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            border-radius: 4px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            transition: background-color .3s, 
+              opacity .5s, visibility .5s;
+            opacity: 0;
+            visibility: hidden;
+            z-index: 1000;
+        }
+
+        #back-to-top::after {
+            content: "\f077";
+            font-family: FontAwesome;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 2em;
+            line-height: 50px;
+            color: #fff;
+        }
+
+        #back-to-top:hover {
+            cursor: pointer;
+            background-color: #333;
+        }
+
+        #back-to-top:active {
+            background-color: #555;
+        }
+
+        #back-to-top.show {
+            opacity: 1;
+            visibility: visible;
+        }
+    </style>
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar">
+<a id="back-to-top"></a>
 <div id="main-wrapper">
 <!-- Page Preloader -->
 <div id="preloader">
@@ -53,8 +128,6 @@
                     Eat, Code, Sleep<br/>
                     Eat, Hack, Sleep
                 </p>
-
-                <p><img src="img/Signature.png" alt="" class="img-responsive"/></p>
             </div>
 
 
@@ -74,79 +147,176 @@
 <div class="right-col-block blocks">
 <div class="theiaStickySidebar">
 
-<section class="section-contact section-wrapper gray-bg">
+<section class="section-contact section-wrapper gray-bg" style="background-color: gray;">
+    <div class="container-fluid">
+        <!--.row-->
+        <div class="row">
+            <div class="col-md-12" style="text-align: center;">
+                <span class="slogan">TE<span class="hl">ST1</span>234</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-wrapper section-project gray-bg">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Contact</h2>
-                </div>
+                <div class="section-title"><h1>목차</h1></div>
             </div>
         </div>
         <!--.row-->
-        <div class="row">
+
+        <div class="row choiys" data-target="#pj1">
             <div class="col-md-12">
-                <address>
-                    <strong>Email</strong><br>
-                    <a href="mailto:hcy3bkj@gmail.com">hcy3bkj@gmail.com</a>
-                </address>
-                <address>
-                    <strong>Blog</strong><br>
-                    <a href="http://blog.choiys.kr">http://blog.choiys.kr</a>
-                </address>
-                <address>
-                    <strong>Phone Number</strong><br>
-                    +82 10 4760 2026
-                </address>
+                <div class="content-item">
+                    <small>2017.09 ~ 2017.12</small>
+                    <h3>IOT 취약점 분석 및 포렌식 방안 도출</h3>
+                    <h4>- 개요 : IoT 디바이스 관리자 권한 탈취, 카메라 및 기기 원격 제어</h4>
+                </div>
             </div>
         </div>
+         <!--.row-->
+
+        <div class="row choiys" data-target="#pj2">
+            <div class="col-md-12">
+                <div class="content-item">
+                    <small>2018.03 - 2018.05</small>
+                    <h3>IOC를 이용한 침해 상황 탐지</h3>
+                    <h4>- 개요 : 배포된 IoC 룰을 이용하여 PC 침해 상황을 점검, 결과를 시각화하는 프로그램</h4>
+                </div>
+            </div>
+        </div>
+         <!--.row-->
+
+        <div class="row choiys" data-target="#pj3">
+            <div class="col-md-12">
+                <div class="content-item">
+                    <small>2018.07 - 2018.08</small>
+                    <h3>IOT HEALTHCARE DEVELOPMENT</h3>
+                    <h4>- 개요 : 센서, 안드로이드, 웹서버를 연동하여 대기질, 심박수 등을 측정하여 실시간으로 표현하고, 통계를 시각화하는 프로그램</h4>
+                </div>
+            </div>
+        </div>
+         <!--.row-->
+
+         <div class="row choiys" data-target="#pj4">
+            <div class="col-md-12">
+                <div class="content-item">
+                    <small>2018.10 - 2018.12</small>
+                    <h3>샌드박스 기반 웹페이지 내 악성코드 탐지</h3>
+                    <h4>- 개요 : 웹페이지 내 첨부파일들을 샌드박스에서 동적분석 후 결과를 시각화하는 프로그램</h4>
+                </div>
+            </div>
+        </div>
+         <!--.row-->
+
+         <div class="row choiys" data-target="#pj5">
+            <div class="col-md-12">
+                <div class="content-item">
+                    <small>2019.09 - 2019.11</small>
+                    <h3>식품 섭취 정보 확인 및 맛집 추천 서비스 개발</h3>
+                    <h4>- 개요 : 사용자가 섭취한 식품의 영양 정보 통계 및 시각화, 웹 크롤링을 이용한 맛집 추천 서비스</h4>
+                </div>
+            </div>
+        </div>
+         <!--.row-->
+
     </div>
 </section>
 
 <section class="section-wrapper section-experience gray-bg">
-    <div class="container-fluid">
+    <div class="container-fluid" id="pj1">
         <div class="row">
             <div class="col-md-12">
-                <div class="section-title"><h2>Work Experience</h2></div>
+                <div class="section-title"><h2>IOT 취약점 분석 및 포렌식 방안 도출</h2></div>
             </div>
         </div>
         <!--.row-->
         <div class="row">
             <div class="col-md-12">
                 <div class="content-item">
-                    <small>2012.07 - 2014.03</small>
-                    <h3>Web Pentester</h3>
-                    <h4>CERT, Chosun University</h4>
+                    <small>Best of the Best 5th</small>
+                    <h3>개요 : IoT 디바이스 관리자 권한 탈취, 카메라 및 기기 원격 제어</h3>
 
-                    <p>Republic Of Korea, Gwangju</p>
-<p>
-- 국가 근로 장학생</br>
-- 학내 웹 취약점 분석 및 보고서 작성
-</p>
+                    <p>
+                    - 기간 : 2017.09 ~ 2017.12<br/>
+                    - 기여도 : 30%<br/>
+                    - 역할 : <span class="hl">공격벡터 선정 및 Exploit 작성</span><br/>
+                    - 산출물 : <span class="hl">LG전자 보안 취약점 탐지 감사장</span>, <span class="hl">해외 컨퍼런스 발표</span>
+                    </p>
                 </div>
+
                 <!-- .experience-item -->
                 <div class="content-item">
-                    <small>2014.03 - 2016.03</small>
-                    <h3>Support Soldier</h3>
-                    <h4>CERT, Republic Of Korea Air Force</h4>
-
-                    <p>Republic Of Korea</p>
-<p>
-- 네트워크 보안 관제</br>
-- 악성코드 분석</br>
-- 보안 체계 관리 및 정책 수립
-</p>
+                    <h3>프로젝트 환경</h3>
+                    <p>
+                        <code>Target</code> : LG 로보킹<br/>
+                        <code>Web</code> : Python3, Flask<br/>
+                        <code>SSL Server</code> : C++<br/>
+                        <code>Disassembly Tool</code> : IDA Pro<br/>
+                        <code>Exploit</code> : <span class="hl">Python2</span></br/>
+                    </p>
                 </div>
                 <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2017.10 - 2018.06</small>
-                    <h3>Intern: Security Researcher</h3>
-                    <h4>RAON Whitehat</h4>
 
-                    <p>Republic Of Korea, Seoul</p>
-<p>
-- 고객사 웹/앱 취약점 분석 및 모의해킹</br>
-</p>
+                <div class="content-item">
+                    <h3>프로젝트 내용</h3>
+                    <p style="text-align: center;">
+                        <img src="./img/1_bob/1_protocol.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 1] 로봇청소기 동작 원리</b>
+                    </p>
+                    <p>
+                        - 로봇청소기와 모바일 디바이스 간 통신 <span class="hl">프로토콜</span> 확인<br/>
+                        - 로봇청소기의 <span class="hl">UART 포트</span>를 이용한 <span class="hl">펌웨어 추출</span> 가능성 확인<br/>
+                        - AP 정보를 전송하는 과정에서의 <span class="hl">논리적 취약점</span> 발생 가능성 확인<br/>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/1_bob/2_uartconnection.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 2] 로봇청소기 UART</b>
+                    </p>
+                    <p>
+                        - 로봇청소기의 <span class="hl">UART 포트</span> 확인 및 연결에 성공<br/>
+                        - <span class="hl">But,</span> 관리자 Login 아이디 / 패스워드가 필요하여 펌웨어 추출 실패
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/1_bob/3_1_vuln.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 3] JSON 형태로 전달되는 AP 정보</b>
+                    </p>
+                    <p>
+                        - 모바일 디바이스에서 AP 정보를 로봇청소기에 전달하는 과정 확인<br/>
+                        - JSON으로 전송되며, <span class="hl">SSID</span>와 <span class="hl">PWD</span>에서 <span class="hl">Command Injection</span> 취약점 존재 확인
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/1_bob/3_commandinjection.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 4] 관리자 권한 획득</b>
+                    </p>
+                    <p>
+                        - <span class="hl">Command Injection</span>을 이용하여 <span class="hl">Telnet 바이너리 업로드</span> 및 서비스 오픈<br/>
+                        - <span class="hl">관리자 권한</span> 획득
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/1_bob/4_codeanalysis.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 5] 취약 코드</b>
+                    </p>
+                    <p>
+                        - 추출한 펌웨어에서 <span class="hl">취약점이 발생한 코드</span> 확인<br/>
+                    </p>
+                    
+                    <p style="text-align: center;">
+                        <img src="./img/1_bob/5_complete.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 6] 카메라 탈취 및 원격 조작</b>
+                    </p>
+                    <p>
+                        - <span class="hl">Fake SSL 서버</span> 구현, 연결하여 <span class="hl">MITM(Man In The Middle)</span> 공격<br/>
+                        - 통신 프로토콜 탈취 및 <span class="hl">원격 조작</span><br/>
+                        - Flask 서버에서 <span class="hl">탈취한 영상</span> 정보 송신
+                    </p>
+
                 </div>
                 <!-- .experience-item -->
             </div>
@@ -154,410 +324,404 @@
         <!--.row-->
     </div>
     <!-- .container-fluid -->
+</section>
+
+<section class="section-wrapper section-experience gray-bg">
+    <div class="container-fluid" id="pj2">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title"><h2>IOC를 이용한 침해 상황 탐지</h2></div>
+            </div>
+        </div>
+        <!--.row-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content-item">
+                    <small>Chosun University</small>
+                    <h3>개요 : 배포된 IoC 룰을 이용하여 PC 침해 상황을 점검, 결과를 시각화하는 프로그램</h3>
+
+                    <p>
+                    - 기간 : 2018.03 - 2018.05<br/>
+                    - 기여도 : 40%<br/>
+                    - 역할 : <span class="hl">웹 프론트엔드, 백엔드 구현 (Python - Flask), 데이터베이스 설계 (SQLite), 결과 시각화</span><br/>
+                    - 산출물 : <a href="http://kpat.kipris.or.kr/kpat/biblioa.do?method=biblioMain_biblio&next=biblioViewSub01&applno=1020180100048&getType=BASE">특허 등록 (10-2018-0100048)</a>
+                    </p>
+                </div>
+                <!-- .experience-item -->
+
+                <!-- .experience-item -->
+                <div class="content-item">
+                    <h3>프로젝트 환경</h3>
+                    <p>
+                        <code>Client</code> : Python3, PyQT<br/>
+                        <code>Web</code> : <span class="hl">Python3, Flask</span> <br/>
+                        <code>Database</code> : <span class="hl">SQLite3</span><br/>
+                    </p>
+                </div>
+                <!-- .experience-item -->
+
+                <div class="content-item">
+                    <h3>프로젝트 내용</h3>
+                    <p style="text-align: center;">
+                        <img src="./img/2_capstone1/1_flow.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 1] 프로젝트 전체 흐름도</b>
+                    </p>
+                    <p>
+                        1. 회원 가입, 로그인 후 클라이언트 프로그램에서 <span class="hl">PC 스캔 요청</span><br/>
+                        2. <span class="hl">IoC 룰 업데이트 서버</span>에서 로컬 PC에 IoC 최신 <span class="hl">룰 업데이트</span><br/>
+                        3. PC 스캔 및 <span class="hl">침해 상황 탐지</span>, 결과 확인<br/>
+                        4. 백엔드 서버에 <span class="hl">결과 전송</span><br/>
+                        5. 웹 프론트엔드에서 <span class="hl">결과 및 통계</span> 확인
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/2_capstone1/2_clientlogin.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 2] 클라이언트 프로그램 로그인 화면</b>
+                    </p>
+                    <p>
+                        - <span class="hl">Python3 + PyQT</span>를 이용하여 화면 구성<br/>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/2_capstone1/3_clientmain.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 3] 로그인 후 메인 화면</b>
+                    </p>
+                    <p>
+                        - 이전 보고서 결과 확인 가능<br/>
+                        - '검사시작' 버튼으로 <span class="hl">PC 스캔 시작</span>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/2_capstone1/4_clientinspection.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 4] 검사 화면</b>
+                    </p>
+                    <p>
+                        - <span class="hl">IoC</span> 룰과 일치하는 파일이 있는지 검사 및 <span class="hl">실시간으로 결과 확인</span><br/>
+                        - 검사 종료 후 <span class="hl">서버로 결과 전송</span>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/2_capstone1/5_statistics.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 5] 웹에서 결과 시각화</b>
+                    </p>
+                    <p>
+                        - 검사 종료 후 웹에서 로그인하여 <span class="hl">결과 및 통계</span> 확인<br/>
+                        - [검사 날짜/시각]이 표현된 버튼을 선택하여 <span class="hl">이전 결과</span> 확인
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--.row-->
+    </div>
+    <!-- .container-fluid -->
+</section>
+
+<section class="section-wrapper section-experience gray-bg">
+    <div class="container-fluid" id="pj3">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title"><h2>IOT HEALTHCARE DEVELOPMENT</h2></div>
+            </div>
+        </div>
+        <!--.row-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content-item">
+                    <small>Qualcomm Institute</small>
+                    <h3>개요 : 센서, 안드로이드, 웹서버를 연동하여 대기질, 심박수 등을 측정하여 실시간으로 표현하고, 통계를 시각화하는 프로그램</h3>
+
+                    <p>
+                    - 기간 : 2018.07 - 2018.08<br/>
+                    - 기여도 : 30%<br/>
+                    - 역할 : <span class="hl">웹 프론트엔드, 백엔드 구현 (PHP - Slim), 데이터베이스 설계 (MySQL), 센서 데이터 실시간 업데이트, 결과 시각화</span><br/>
+                    </p>
+                </div>
+                <!-- .experience-item -->
+
+                <div class="content-item">
+                    <h3>프로젝트 환경</h3>
+                    <p>
+                        <code>Web</code> : <span class="hl">PHP7, Slim</span><br/>
+                        <code>Database</code> : <span class="hl">MySQL</span><br/>
+                        <code>App</code> : Java, Android Studio<br/>
+                        <code>Sensor</code> : Python3<br/>
+                    </p>
+                </div>
+                <!-- .experience-item -->
+
+                <div class="content-item">
+                    <h3>프로젝트 내용</h3>
+                    <p style="text-align: center;">
+                        <img src="./img/3_qi/1_maps.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 1] 앱(좌) 및 웹(우)</b>
+                    </p>
+                    <p>
+                        - <span class="hl">GPS</span>를 이용하여 현재 위치 확인<br/>
+                        - START 버튼 선택 시 <span class="hl">이동한 경로</span> 지도에 표시<br/>
+                        - END 버튼 선택 시 이동 종료
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/3_qi/2_sensordata.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 2] 웹/앱에서 센서 데이터 확인</b>
+                    </p>
+                    <p>
+                        - 대기질, 온도, 심박수 센서에서 받아온 데이터 <span class="hl">실시간</span>으로 웹/앱에서 표현<br/>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/3_qi/3_historical.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 3] 웹/앱에서 통계 확인</b>
+                    </p>
+                    <p>
+                        - 웹/앱에서 <span class="hl">1주, 1개월, 1년</span> 단위로 통계 확인
+                    </p>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <!--.row-->
+    </div>
+    <!-- .container-fluid -->
+</section>
+
+<section class="section-wrapper section-experience gray-bg">
+    <div class="container-fluid" id="pj4">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title"><h2>샌드박스 기반 웹페이지 내 악성코드 탐지</h2></div>
+            </div>
+        </div>
+        <!--.row-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content-item">
+                    <small>Best of the Best 5th</small>
+                    <h3>개요 : 웹페이지 내 첨부파일들을 샌드박스에서 동적분석 후 결과를 시각화하는 프로그램</h3>
+
+                    <p>
+                    - 기간 : 2018.10 - 2018.12<br/>
+                    - 기여도 : 80%<br/>
+                    - 역할 : <span class="hl">웹 프론트엔드, 백엔드 구현 (Python - Flask), 웹 크롤링, 샌드박스 설치 및 연동 (Cuckoo Sandbox), 결과 시각화</span><br/>
+                    </p>
+                </div>
+                <!-- .experience-item -->
+
+                <div class="content-item">
+                    <h3>프로젝트 환경</h3>
+                    <p>
+                        <code>Web</code> : <span class="hl">Python3, Flask</span><br/>
+                        <code>Database</code> : <span class="hl">MySQL</span><br/>
+                        <code>Sandbox</code> : <b><a href="https://cuckoosandbox.org/">Cuckoo Sandbox</a></b><br/>
+                    </p>
+                </div>
+                <!-- .experience-item -->
+
+                <div class="content-item">
+                    <h3>프로젝트 내용</h3>
+                    <p style="text-align: center;">
+                        <img src="./img/4_capstone2/1_main.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 1] 웹 메인페이지</b>
+                    </p>
+                    <p>
+                        - 첨부파일이 포함된 <span class="hl">웹페이지 URL</span> 입력<br/>
+                        - Search 버튼을 선택하여 <span class="hl">검사 시작</span>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/4_capstone2/2_submit.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 2] 검사 시작</b>
+                    </p>
+                    <p>
+                        - <span class="hl">크롤링</span>을 이용하여 웹페이지 내 <span class="hl">첨부파일 링크</span> 추출<br/>
+                        - 존재하는 첨부파일 <span class="hl">링크 개수</span> 확인<br/>
+                        - Submit 버튼을 선택하여 <span class="hl">샌드박스</span>에서 파일 <span class="hl">동적 분석</span> 시작
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/4_capstone2/3_view.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 3] 검사 시작</b>
+                    </p>
+                    <p>
+                        - 샌드박스에서 동적 분석이 완료되면 View Report 버튼 활성화<br/>
+                        - View Report 버튼을 선택하여 <span class="hl">결과 확인</span>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/4_capstone2/4_report.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 4] 결과 확인</b>
+                    </p>
+                    <p>
+                        - 검사한 URL, 파일 링크, <span class="hl">동적 분석 결과</span>, <span class="hl">VirusTotal 결과</span> 확인<br/>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/4_capstone2/5_statistics.PNG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 5] 통계 확인</b>
+                    </p>
+                    <p>
+                        - 이전 결과를 기반으로 <span class="hl">통계 시각화</span>
+                    </p>
+
+                    
+                </div>
+            </div>
+        </div>
+        <!--.row-->
+    </div>
+    <!-- .container-fluid -->
+</section>
+
+<section class="section-wrapper section-experience gray-bg">
+    <div class="container-fluid" id="pj5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="section-title"><h2>식품 섭취 정보 확인 및 맛집 추천 서비스 개발</h2></div>
+            </div>
+        </div>
+        <!--.row-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="content-item">
+                    <small>Samsung Software Academy For Youth</small>
+                    <h3>개요 : 사용자가 섭취한 식품의 영양 정보 통계 및 시각화, 웹 크롤링을 이용한 맛집 추천 서비스</h3>
+
+                    <p>
+                    - 기간 : 2019.09 - 2019.11<br/>
+                    - 기여도 : 70%<br/>
+                    - 역할 : <span class="hl">웹 프론트엔드 (Vue.js), 백엔드 구현 (Java - Spring Boot), 데이터베이스 설계 (MySQL - MyBatis), 웹 크롤링</span><br/>
+                    - 산출물 : <span class="hl">SSAFY 프로젝트 경진대회 최우수상</span>
+                    </p>
+                </div>
+                <!-- .experience-item -->
+
+                <div class="content-item">
+                    <h3>프로젝트 환경</h3>
+                    <p>
+                        <code>Web FrontEnd</code> : <span class="hl">JavaScript, Vue.js</span><br/>
+                        <code>Web RESTful API Server</code> : <span class="hl">Java, Spring Boot</span><br/>
+                        <code>Crawling Server</code> : <span class="hl">Python3, Flask</span><br/>
+                        <code>Database</code> : <span class="hl">MySQL</span><br/>
+                    </p>
+                </div>
+                <!-- .experience-item -->
+
+                <div class="content-item">
+                    <h3>프로젝트 내용</h3>
+                    <p style="text-align: center;">
+                        <img src="./img/5_ssafy/1_mainpage.JPG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 1] 웹 메인페이지</b>
+                    </p>
+                    <p>
+                        - '망고플레이트' 맛집 정보 <span class="hl">크롤링</span><br/>
+                        - 하단에 입력한 <span class="hl">주소</span>(ex. 일곡동) 기준 <span class="hl">맛집</span> 상위 20곳 추출<br/>
+                        - <span class="hl">슬라이더</span>를 이용하여 맛집 정보 표시<br/>
+                        - 슬라이더 클릭 시 해당 맛집 상세 정보 페이지로 이동
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/5_ssafy/2_mainpage2.JPG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 2] 메인 - 요리/맛집 기사 </b>
+                    </p>
+                    <p>
+                        - <span class="hl">네이버 기사</span> 중 <span class="hl">요리/맛집 카테고리</span>의 기사 상위 6개 정보 표시<br/>
+                        - 기사 클릭 시 해당 기사 본문으로 리다이렉트
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/5_ssafy/3_notice.JPG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 3] 공지 게시판 </b>
+                    </p>
+                    <p>
+                        - <span class="hl">관리자 계정</span>으로 로그인 시 공지 게시판 글쓰기 버튼 활성화<br/>
+                        - 관리자는 글 수정, 삭제 가능<br/>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/5_ssafy/4_foodlist.JPG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 4] 식품 리스트 </b>
+                    </p>
+                    <p>
+                        - 등록된 상품 정보 확인<br/>
+                        - 섭취 버튼 클릭 시 섭취량 순으로 <span class="hl">자동 정렬</span><br/>
+                        - 사진 또는 상세정보 클릭 시 해당 제품 상세 정보 확인<br/>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/5_ssafy/5_fooddetail.JPG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 5] 식품 상세정보 </b>
+                    </p>
+                    <p>
+                        - 성분 및 영양 정보 확인 가능<br/>
+                        - 수량 선택 후 섭취 버튼 선택 시 해당 제품 섭취<br/>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/5_ssafy/6_intake.JPG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 6] 회원 섭취 정보 </b>
+                    </p>
+                    <p>
+                        - 섭취한 제품 개수, 총 영양 정보 확인<br/>
+                        - 섭취한 식품 정보 확인<br/>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/5_ssafy/7_qna.JPG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 7] 질문 게시판</b>
+                    </p>
+                    <p>
+                        - 회원 글 작성 / 수정 / 삭제 기능<br/>
+                        - 댓글 작성 / 삭제 기능<br/>
+                        - 대댓글 작성 기능<br/>
+                    </p>
+                    
+                    <p style="text-align: center;">
+                        <img src="./img/5_ssafy/8_manage.JPG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 8] 관리자 페이지</b>
+                    </p>
+                    <p>
+                        - 관리자 로그인 시 회원 관리 페이지 접근 가능<br/>
+                        - 회원 정보 확인 및 계정 삭제 가능<br/>
+                    </p>
+                    
+                    <p style="text-align: center;">
+                        <img src="./img/5_ssafy/9_matjibmap.JPG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 9] 맛집 지도</b>
+                    </p>
+                    <p>
+                        - 하단에 위치 검색(ex. 일곡동 / 북구 일곡동) 시 해당 위치로 지도 이동 및 <span class="hl">맛집 상위 20개(망고플레이트 크롤링)</span> 지도에 마킹<br/>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/5_ssafy/10_matjiblist.JPG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 10] 맛집 리스트</b>
+                    </p>
+                    <p>
+                        - 20개 맛집 간략한 정보(가게명, 위치, 음식 종류) 표시<br/>
+                        - 망고플레이트 조회수 표시<br/>
+                        - 사진 선택 시 해당 맛집 상세정보 페이지로 이동<br/>
+                    </p>
+
+                    <p style="text-align: center;">
+                        <img src="./img/5_ssafy/11_matjibinfo.JPG" width="100%" style="border: 1px solid black; display: block;" />
+                        <b>[그림 11] 맛집 상세정보</b>
+                    </p>
+                    <p>
+                        - 맛집 상세 정보 확인<br/>
+                        - 슬라이더를 이용하여 가게 사진 표시<br/>
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+        <!--.row-->
+    </div>
+    <!-- .container-fluid -->
+
 
 </section>
 <!-- .section-experience -->
-
-<section class="section-wrapper section-education">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title"><h2>Education</h2></div>
-            </div>
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-item">
-                    <small>2012.03 - 2019.02</small>
-                    <h3>Computer Engineering</h3>
-                    <h4>Chosun University</h4>
-
-                    <p>Republic Of Korea, Gwangju</p>
-                    <p>
-                    - 차석 졸업 ( 4.41 / 4.5 )</br>
-                    </p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2016.07 - 2017.02</small>
-                    <h3>Trainee: Vulnerability Research</h3>
-                    <h4>Best of the Best 5th</h4>
-
-                    <p>Republic Of Korea, Seoul</p>
-                    <p>
-                    - 정보보안 집체 교육 이수 및 프로젝트 수행</br>
-                    </p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2018.07 - 2018.08</small>
-                    <h3>Overseas Training: IoT Development Project</h3>
-                    <h4>Qualcomm Institute</h4>
-
-                    <p>California, San Diego</p>
-                    <p>
-                    - IoT 개발 및 소프트웨어 개발 방법론 교육 이수, 관련 프로젝트 수행
-                    </p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2019.07 - </small>
-                    <h3>Trainee: Software Development & Algorithm</h3>
-                    <h4>Samsung Software Academy For Youth 2nd</h4>
-
-                    <p>Republic Of Korea, Gwangju</p>
-                    <p>
-                    - 알고리즘 교육 이수</br>
-                    - 웹 프론트엔드, 백엔드 교육 이수 및 관련 프로젝트 수행
-                    </p>
-                </div>
-                <!-- .experience-item -->
-            </div>
-        </div>
-        <!--.row-->
-    </div>
-    <!-- .container-fluid -->
-
-</section>
-<!-- .section-education -->
-
-
-
-<section class="section-wrapper skills-wrapper">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>Skills</h2>
-                </div>
-            </div>
-
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div class="progress-wrapper">
-
-		    <code>Security</code> : <span><b>Web Pentest</b>, Mobile Pentest, Reverse Engineering</span>
-		    <br />
-
-		    <code>Languages</code> : <span><b>Python</b>, <b>Java</b>, C/C++, PHP, JavaScript, Assembly</span>
-		    <br />
-
-            <code>Databases</code> : <span><b>MySQL</b>, Oracle</span>
-            <br />
-
-            <code>Frameworks</code> : <span><b>Spring (+boot)</b>, Flask, MyBatis, SQLAlchemy, Vue.js, etc.</span>
-            <br />
-
-            <code>ETC</code> : <span>Git, Docker, Linux, etc.</span>
-            <br />
-        </div>
-        <!--.row -->
-    </div>
-    <!-- .container-fluid -->
-</section>
-<!-- .skills-wrapper -->
-
-<section class="section-wrapper section-project gray-bg">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title"><h2>Qualification</h2></div>
-            </div>
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-item">
-                    <small>2016.05.06</small>
-                    <h3>정보처리기사</h3>
-                    <h4>한국산업인력공단</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-item">
-                    <small>2018.09.11</small>
-                    <h3>OPIc ( IM2 )</h3>
-                    <h4>멀티캠퍼스</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-item">
-                    <small>2019.02.10</small>
-                    <h3>TOEIC ( 785 )</h3>
-                    <h4>YBM</h4>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="section-wrapper section-project gray-bg">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title"><h2>Project</h2></div>
-            </div>
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-item">
-                    <small>2017.09 - 2017.12</small>
-                    <h3>IoT 취약점 분석 및 포렌식 방안 도출</h3>
-                    <h4>Best of the Best 5th</h4>
-
-                    <p>IoT 디바이스 관리자 권한 탈취, 카메라 및 기기 원격 제어</p>
-                    <pre>- 기여도 : 30%
-- 공격 벡터 선정 및 Exploit 작성
-
-- 산출물 : LG전자 보안 취약점 탐지 감사장, 해외 컨퍼런스 발표</pre>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2018.03 - 2018.05</small>
-                    <h3><a href="https://github.com/xinfolab/gs26">IoC를 이용한 침해 상황 탐지</a></h3>
-                    <h4>Chosun University</h4>
-
-                    <p>배포된 IoC 룰을 이용하여 PC 침해 상황을 점검, 결과를 시각화하는 프로그램</p>
-                    <pre>- 기여도 : 40%
-- 웹 프론트엔드, 백엔드 구현 (Python - Flask)
-- 데이터베이스 설계 (SQLite)
-- 결과 시각화
-
-- 산출물 : <a href="http://kpat.kipris.or.kr/kpat/biblioa.do?method=biblioMain_biblio&next=biblioViewSub01&applno=1020180100048&getType=BASE" target="_blank">특허 등록 (10-2018-0100048)</a></pre>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2018.07 - 2018.08</small>
-                    <h3><a href="https://github.com/choiys-94/qi_webserver">IoT HealthCare Development</a></h3>
-                    <h4>Qualcomm Institute</h4>
-
-                    <p>센서, 안드로이드, 웹서버를 연동하여 대기질, 심박수 등을 측정하여 실시간으로 표현하고, 통계를 시각화하는 프로그램</p>
-                    <pre>- 기여도 : 30%
-- 웹 프론트엔드, 백엔드 구현 (PHP - Slim)
-- 데이터베이스 설계 (MySQL)
-- 센서 데이터 실시간 업데이트
-- 결과 시각화</pre>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2018.10 - 2018.12</small>
-                    <h3><a href="https://github.com/choiys-94/Capstone2">샌드박스 기반 웹페이지 내 악성코드 탐지</a></h3>
-                    <h4>Chosun University</h4>
-
-                    <p>웹페이지 내 첨부파일들을 샌드박스에서 동적분석 후 결과를 시각화하는 프로그램</p>
-                    <pre>- 기여도 : 70%
-- 웹 프론트엔드, 백엔드 구현 (Python - Flask)
-- 웹 크롤링
-- 샌드박스 설치 및 연동 (Cuckoo Sandbox)
-- 결과 시각화</pre>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2019.09 - 2019.11</small>
-                    <h3>식품 섭취 정보 확인 및 맛집 추천 서비스 개발</h3>
-                    <h4>Samsung Software Academy For Youth</h4>
-
-                    <p>사용자가 섭취한 식품의 영양 정보 통계 및 시각화, 웹 크롤링을 이용한 맛집 추천 서비스</p>
-                    <pre>- 기여도 : 70%
-- 웹 프론트엔드 (Vue.js), 백엔드 구현 (Java - Spring Boot)
-- 데이터베이스 설계 (MySQL - MyBatis)
-- 웹 크롤링
-
-- 산출물 : SSAFY 프로젝트 경진대회 최우수상</pre>
-                </div>
-                <!-- .experience-item -->
-            </div>
-        </div>
-        <!--.row-->
-    </div>
-    <!-- .container-fluid -->
-
-</section>
-<!-- .section-experience -->
-
-<section class="section-wrapper section-presentation">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title"><h2>Presentation</h2></div>
-            </div>
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-item">
-                    <small>2016.12</small>
-                    <h3>Iot 기기 취약점 분석 및 공격과 포렌식 방안 연구</h3>
-                    <h4>ChungAng University, Security CyLab</h4>
-
-                    <p>Republic Of Korea, Seoul</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2017.09</small>
-                    <h3>SCTF 예선 문제로 알아보는 웹 해킹</h3>
-                    <h4>2017 KUCIS</h4>
-
-                    <p>Republic Of Korea, Gwangju</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2018.03</small>
-                    <h3><a href="https://www.first.org/events/colloquia/osaka2018/program#d20180315">IoT Hacking: What happened to my home?</a></h3>
-                    <h4>OSAKA 2018 First Technical Colloquium</h4>
-
-                    <p>Japan, Osaka</p>
-                </div>
-                <!-- .experience-item -->
-            </div>
-        </div>
-        <!--.row-->
-    </div>
-    <!-- .container-fluid -->
-
-</section>
-<!-- .section-presentation -->
-
-<section class="section-wrapper section-awards">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title"><h2>Awards</h2></div>
-            </div>
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="col-md-12">
-                <div class="content-item">
-                    <small>2015.12</small>
-                    <h3>Christmas CTF 2015</h3>
-                    <h4>9th (Team. Zashys)</h4>
-
-                    <p>Online</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2016.12</small>
-                    <h3>LG전자 보안 취약점 탐지 감사장</h3>
-                    <h4>LG Electronics Inc.</h4>
-
-                    <p>Republic Of Korea, Seoul</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2016.12</small>
-                    <h3>Christmas CTF 2016</h3>
-                    <h4>9th (Team. RebForPwn)</h4>
-
-                    <p>Online</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2017.04</small>
-                    <h3>Codegate 2017 해킹 동영상 공모전 특별상</h3>
-                    <h4>Codegate 2017</h4>
-
-                    <p>Republic Of Korea, Seoul</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2017.05</small>
-                    <h3>H.U.S.T Hacking Festival 2017</h3>
-                    <h4>4th (Team. RebForPwn)</h4>
-
-                    <p>Online</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2017.08</small>
-                    <h3>2017 SCTF(Samsung CTF)</h3>
-                    <h4>Finalist (choiys)</h4>
-
-                    <p>Republic Of Korea, Seoul</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2017.11</small>
-                    <h3>2017 WITHCON</h3>
-                    <h4>Finalist, 8th (Team. RebForPwn)</h4>
-
-                    <p>Republic Of Korea, Seoul</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2017.12</small>
-                    <h3>2017 KUCIS(정보보호동아리연합) 공로상</h3>
-                    <h4>KUCIS</h4>
-
-                    <p>Republic Of Korea, Seoul</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2018.03</small>
-                    <h3>2018 육군 해킹 방어대회 장려상</h3>
-                    <h4>Republic Of Korea Army</h4>
-
-                    <p>Republic Of Korea</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2019.11</small>
-                    <h3>2019 SSAFY 프로젝트 경진대회 최우수상</h3>
-                    <h4>Samsung Electronics</h4>
-
-                    <p>Republic Of Korea, Gwangju</p>
-                </div>
-                <!-- .experience-item -->
-                <div class="content-item">
-                    <small>2019.12</small>
-                    <h3>2019 Christmas CTF</h3>
-                    <h4>13th (Team. 부질X)</h4>
-
-                    <p>Republic Of Korea</p>
-                </div>
-                <!-- .experience-item -->
-            </div>
-        </div>
-        <!--.row-->
-    </div>
-    <!-- .container-fluid -->
-
-</section>
-<!-- .section-awards -->
-
-<section class="section-references section-wrapper gray-bg">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-title">
-                    <h2>References</h2>
-                </div>
-            </div>
-        </div>
-        <!--.row-->
-        <div class="row">
-            <div class="col-md-12">
-                <address>
-                    <a href="http://www.kjdaily.com/read.php3?aid=1522577304434447062"><strong>조선대 박사홍·최용선씨 ‘해킹방어대회’ 장려상</strong><br></a>
-                </address>
-                <address>
-                    <a href="https://blog.naver.com/kisa118/221177730327"><strong>2017 대학 정보보호 우수 동아리 시상</strong><br></a>
-                </address>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!--.section-contact-->
 
 <footer class="footer">
     <div class="copyright-section">
@@ -584,11 +748,57 @@
 </div>
 <!-- #main-wrapper -->
 
+<script>
+    $(".row").on('click', function() {
+        var scrollPosition = $($(this).attr("data-target")).offset().top;
+
+        $('html, body').stop().animate({scrollTop: scrollPosition-200});
+    });
+
+    $(".choiys").on('mouseover', function(){
+        // .choiys:hover {
+        //     color: red;
+        //     transition: 0.5s;
+        //     opacity: 0.3;
+        // }
+        $(this).find('*').css('color', '#FF0000');
+        $(this).find('*').css('transition', '0.5s');
+        $(this).find('*').css('opacity', '0.8');
+        $(this).find('*').css('cursor', 'pointer');
+    });
+
+    $(".choiys").on('mouseout', function(){
+        // .choiys:hover {
+        //     color: red;
+        //     transition: 0.5s;
+        //     opacity: 0.3;
+        // }
+        $(this).find('*').css('color', '#000000');
+        $(this).find('*').css('opacity', '1');
+    });
+
+    $(function() {
+        $("#back-to-top").on('click', function(e) {
+            e.preventDefault();
+            $('html, body').animate({scrollTop: 0}, 600);
+        });
+
+        $(window).scroll(function() {
+            if($(document).scrollTop() > 100) {
+                $("#back-to-top").addClass("show");
+            }
+            else {
+                $("#back-to-top").removeClass("show");
+            }
+        });
+    });
+</script>
+
 <!-- jquery -->
-<script src="js/jquery-2.1.4.min.js"></script>
+<!-- <script src="js/jquery-2.1.4.min.js"></script> -->
 
 <!-- Bootstrap -->
-<script src="js/bootstrap.min.js"></script>
+<!-- <script src="js/bootstrap.min.js"></script> -->
 <script src="js/theia-sticky-sidebar.js"></script>
 <script src="js/scripts.js"></script>
 </body>
